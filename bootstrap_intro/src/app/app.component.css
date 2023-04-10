@@ -1,0 +1,70 @@
+.heading {
+    color: #676767;
+}
+
+.card-insurance {
+    background-color: #f19d80;
+}
+
+.bill-ammount {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.final-status {
+    background-color: #486f66;
+}
+
+.final-bill-ammount {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.final-status-heading {
+    border-bottom: 1px solid whitesmoke;
+}
+
+.caption {
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.purchase {
+    background-color: #f5cfcf;
+}
+
+.share {
+    background-color: #31564d;
+    color: #fff;
+}
+
+.status-footer {
+    background-color: #284a43;
+    color: #aec9c4;
+}
+
+.error-message {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.message {
+    color: #989898;
+}
+
+.revoke-option {
+    padding: 6px 20px;
+    border-radius: 30px;
+    border: 2px solid #d36d70;
+    font-size: 16px;
+    font-weight: 700;
+    color: #d36d70;
+}
+
+.contact {
+    font-size: 20px;
+    font-weight: 600;
+}

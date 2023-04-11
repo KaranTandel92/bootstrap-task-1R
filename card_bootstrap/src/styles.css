@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    max-width: 874px;
+}
+
+.card-stat {
+    background-color: #bac2db;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: #284B80;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.card-technology {
+    color: #8D98AA;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-stat-heading {
+    color: #8D98AA;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.status-number {
+    color: #284B80;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.caption-btn {
+    border: 1px solid #1DC6BB;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.follow-card-btn {
+    background-color: #1DC6BB;
+}
+
+
+.connect-card-btn {
+    color: #1DC6BB;
+}

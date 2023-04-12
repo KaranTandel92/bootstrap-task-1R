@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Inter';
+}
+
+// start : first card
+
+.card {
+    width: 492px;
+}
+
+.card-title {
+    color: #6E7491;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.card-option-heading {
+    color: #6D8493;
+    font-weight: 400;
+    line-height: 0;
+}
+
+.card-views {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-text {
+    color: #7C8DB0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+    --bs-btn-bg: #2D9CDB;
+    --bs-btn-border-color: #2D9CDB;
+    width: 315px;
+}
+
+// end: first card
+
+// start : second card
+
+.another-card {
+    background-color: #fff;
+    width: 775px;
+    border-radius: 16px;
+}
+
+.card-index {
+    background-color: #EB5757;
+    color: #fff;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.card-details {
+    width: 100%;
+}
+
+.social {
+    width: 180px;
+    height: auto;
+}
+
+.next-btn {
+    background-color: #EB5757;
+    border-color: #EB5757;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-tag {
+    color: #90A4AE;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.chapter-number {
+    color: #90A4AE;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+// end : second card

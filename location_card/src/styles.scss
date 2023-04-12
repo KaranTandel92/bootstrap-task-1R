@@ -57,6 +57,11 @@ body {
     border-radius: 16px;
 }
 
+.index {
+    font-size: 13px;
+    font-weight: 400;
+}
+
 .card-index {
     background-color: #EB5757;
     color: #fff;
@@ -64,12 +69,19 @@ body {
     border-bottom-left-radius: 16px;
 }
 
+.card-heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .card-details {
     width: 100%;
 }
 
-.social {
-    width: 180px;
+.chapter-heading {
+    font-size: 32px;
+    font-weight: 600;
+    width: 210px;
     height: auto;
 }
 

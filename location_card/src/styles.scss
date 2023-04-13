@@ -11,6 +11,19 @@ body {
     font-family: 'Inter';
 }
 
+// variables
+$pink-color: #EB5757;
+$skyblue-color: #2D9CDB;
+
+
+// extend
+.font-size {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
 // start : first card
 
 .card {
@@ -31,14 +44,12 @@ body {
 }
 
 .card-views {
-    font-size: 16px;
-    font-weight: 400;
+    @extend .font-size;
 }
 
 .card-text {
     color: #7C8DB0;
-    font-weight: 400;
-    font-size: 16px;
+    @extend .font-size;
 }
 
 .btn {
@@ -63,7 +74,7 @@ body {
 }
 
 .card-index {
-    background-color: #EB5757;
+    background-color: $pink-color;
     color: #fff;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -86,8 +97,8 @@ body {
 }
 
 .next-btn {
-    background-color: #EB5757;
-    border-color: #EB5757;
+    background-color: $pink-color;
+    border-color: $pink-color;
     border-radius: 30px;
     color: #fff;
     text-decoration: none;
@@ -106,3 +117,19 @@ body {
 }
 
 // end : second card
+
+@media (max-width: 768px) {
+    .another-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-index {
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0;
+    }
+
+    .next-btn {
+        width: 100%;
+    }
+}

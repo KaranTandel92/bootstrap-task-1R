@@ -13,7 +13,7 @@ body {
 
 // variables
 $pink-color: #EB5757;
-$skyblue-color: #2D9CDB;
+$gray-color: #90A4AE;
 
 
 // extend
@@ -27,7 +27,9 @@ $skyblue-color: #2D9CDB;
 // start : first card
 
 .card {
-    width: 492px;
+    max-width: 775px;
+    width: 100%;
+    border: 0;
 }
 
 .card-title {
@@ -55,7 +57,12 @@ $skyblue-color: #2D9CDB;
 .btn {
     --bs-btn-bg: #2D9CDB;
     --bs-btn-border-color: #2D9CDB;
-    width: 315px;
+}
+
+.img-located {
+    width: 392px;
+    object-fit: cover;
+    height: 100%;
 }
 
 // end: first card
@@ -105,13 +112,13 @@ $skyblue-color: #2D9CDB;
 }
 
 .img-tag {
-    color: #90A4AE;
+    color: $gray-color;
     font-size: 8px;
     font-weight: 400;
 }
 
 .chapter-number {
-    color: #90A4AE;
+    color: $gray-color;
     font-size: 13px;
     font-weight: 400;
 }
@@ -131,5 +138,14 @@ $skyblue-color: #2D9CDB;
 
     .next-btn {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .img-located {
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0 !important;
     }
 }

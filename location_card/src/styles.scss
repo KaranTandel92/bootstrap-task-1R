@@ -133,6 +133,7 @@ $gray-color: #90A4AE;
     .another-card {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .card-index {
@@ -143,9 +144,6 @@ $gray-color: #90A4AE;
     .next-btn {
         width: 100%;
     }
-}
-
-@media (max-width: 768px) {
 
     .img-located {
         width: 100%;

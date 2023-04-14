@@ -42,7 +42,7 @@ $font-size: 12px;
     color: $white;
     width: 280px;
     flex-shrink: 0;
-    transition: .4s ease-in-out;
+    transition: 4.s ease-in-out;
     flex: 0 0 280px;
 }
 
@@ -137,7 +137,6 @@ $font-size: 12px;
     border-radius: 10px;
     box-shadow: -3px -3px 5px rgba(39, 38, 38, 1.08);
     width: 270px;
-    flex-grow: 0.25;
     cursor: pointer;
 }
 

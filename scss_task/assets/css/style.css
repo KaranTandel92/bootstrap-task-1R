@@ -121,7 +121,7 @@ body {
   border-radius: 10px;
   box-shadow: -3px -3px 5px rgb(39, 38, 38);
   width: 270px;
-  flex-grow: 0.25;
+  flex-grow: 0;
   cursor: pointer;
 }
 

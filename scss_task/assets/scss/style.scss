@@ -5,7 +5,6 @@ body {
 }
 
 body {
-
     font-family: 'Josefin Sans';
     overflow: hidden;
 }
@@ -25,6 +24,15 @@ $font-size: 12px;
 
 // end : variable
 
+// mixins
+
+@mixin padding () {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
 .container {
     background-color: #000;
     overflow: hidden;
@@ -36,6 +44,19 @@ $font-size: 12px;
     background-color: $black;
     color: $white;
     width: 280px;
+    flex-shrink: 0;
+    transition: .5s ease-in-out;
+    flex: 0 0 280px;
+}
+
+#toggle {
+    display: none;
+
+    &:checked+.sidebar {
+        transform: translateX(-280px);
+        width: 0;
+        flex: 0;
+    }
 }
 
 .heading {
@@ -44,6 +65,17 @@ $font-size: 12px;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+}
+
+.fa-bars {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.main-body {
+    flex-grow: 1;
+    overflow: hidden;
+    flex-direction: column;
 }
 
 .list {
@@ -65,6 +97,7 @@ $font-size: 12px;
 .mail-id {
     font-size: $font-size;
     color: #8790a2;
+    cursor: pointer;
 }
 
 .user-sign-up {
@@ -73,8 +106,8 @@ $font-size: 12px;
 }
 
 .img-human {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
 }
 
@@ -82,6 +115,7 @@ $font-size: 12px;
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .logo {
@@ -91,12 +125,6 @@ $font-size: 12px;
 
 .logo-name {
     margin-left: 10px;
-}
-
-.main-body {
-    flex-grow: 1;
-    overflow: hidden;
-    flex-direction: column;
 }
 
 .user-group {
@@ -113,6 +141,7 @@ $font-size: 12px;
     box-shadow: -3px -3px 5px rgba(39, 38, 38, 1.08);
     width: 270px;
     flex-grow: 0.25;
+    cursor: pointer;
 }
 
 .user-profile {

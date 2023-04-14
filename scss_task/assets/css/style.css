@@ -27,6 +27,18 @@ body {
   background-color: #15181b;
   color: #FFF;
   width: 280px;
+  flex-shrink: 0;
+  transition: 0.5s ease-in-out;
+  flex: 0 0 280px;
+}
+
+#toggle {
+  display: none;
+}
+#toggle:checked + .sidebar {
+  transform: translateX(-280px);
+  width: 0;
+  flex: 0;
 }
 
 .heading {
@@ -35,6 +47,17 @@ body {
   padding: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.fa-bars {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.main-body {
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 .list {
@@ -55,6 +78,7 @@ body {
 .mail-id {
   font-size: 12px;
   color: #8790a2;
+  cursor: pointer;
 }
 
 .user-sign-up {
@@ -63,8 +87,8 @@ body {
 }
 
 .img-human {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 }
 
@@ -72,6 +96,7 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .logo {
@@ -81,12 +106,6 @@ body {
 
 .logo-name {
   margin-left: 10px;
-}
-
-.main-body {
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
 }
 
 .user-group {
@@ -103,6 +122,7 @@ body {
   box-shadow: -3px -3px 5px rgb(39, 38, 38);
   width: 270px;
   flex-grow: 0.25;
+  cursor: pointer;
 }
 
 .user-profile {

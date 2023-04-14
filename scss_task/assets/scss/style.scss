@@ -26,11 +26,8 @@ $font-size: 12px;
 
 // mixins
 
-@mixin padding () {
-    padding-top: $top;
-    padding-right: $right;
-    padding-bottom: $bottom;
-    padding-left: $left;
+@mixin padding ($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
 }
 
 .container {
@@ -45,7 +42,7 @@ $font-size: 12px;
     color: $white;
     width: 280px;
     flex-shrink: 0;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
     flex: 0 0 280px;
 }
 
@@ -80,7 +77,7 @@ $font-size: 12px;
 
 .list {
     cursor: pointer;
-    padding: 15px 10px;
+    @include padding (15px, 10px, 15px, 10px);
     margin-right: 10px;
 
     &:hover {
